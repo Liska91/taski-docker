@@ -16,7 +16,7 @@ services:
     volumes:
       - static_volume:/backend_static
   frontend:
-    image: liss91/taski_frontend
+    image: liss91/taski_frontend #
     env_file: .env
     command: cp -r /app/build/. /frontend_static/
     volumes:
